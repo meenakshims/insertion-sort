@@ -15,16 +15,7 @@ int sort(int *array,int size)
     }
   return 0;	  
 }
-int read(int *array)
-{
-  int i,size;
-  scanf("%d",&size);
-  for(i=0;i<size;i++)
-    {
-      scanf("%d",&array[i]);
-    }
-  return size;
-}
+
 
 int main()
 {
