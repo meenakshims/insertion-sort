@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-
+//sort an array
 int sort(int *array,int size)
 {
   int i,j,k;
