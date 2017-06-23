@@ -15,7 +15,7 @@ int sort(int *array,int size)
     }
   return 0;	  
 }
-
+//reading an array
 int read(int *array)
 {
   int i,size;
