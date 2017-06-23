@@ -1,10 +1,9 @@
 #include<stdio.h>
 
-int main()
+
+int sort(int *array)
 {
-  int array[7]={4,23,43,38,15,10,30};
-  int i,j,k,s;
- 
+  int i,j,k;
   for(i=1;i<7;i++)
     {
       k=array[i];
@@ -14,11 +13,24 @@ int main()
 	}
       array[j+1]=k;
     }
-	  for(s=0;s<7;s++)
-	    {
-	      printf("%d\t",array[s]);
-	    }
-	  printf("\n");
+	  
+}
+
+int main()
+{
+  int array[7]={4,23,43,38,15,10,30};
+  int s;
+
+  sort(array);
+  for(s=0;s<7;s++)
+    {
+      printf("%d\t",array[s]);
+    }
+  printf("\n");
+    return 0;
+}
+ 
+
 	    
     
-}
+
