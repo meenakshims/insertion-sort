@@ -1,1 +1,1 @@
-Implementing sorting an array using insertion sort
+Implementing sorting an array using insertion sort by adding a read fn.
