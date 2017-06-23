@@ -1,10 +1,10 @@
 #include<stdio.h>
 
 
-int sort(int *array)
+int sort(int *array,int size)
 {
   int i,j,k;
-  for(i=1;i<7;i++)
+  for(i=0;i<size;i++)
     {
       k=array[i];
       for(j=i-1;j>=0&&k<array[j];j--)
@@ -28,11 +28,13 @@ int read(int *array)
 
 int main()
 {
-  int array[7]={4,23,43,38,15,10,30};
+  int array[100];
   int s;
+  int size;
+  size=read(array);
 
-  sort(array);
-  for(s=0;s<7;s++)
+  sort(array,size);
+  for(s=0;s<size;s++)
     {
       printf("%d\t",array[s]);
     }
